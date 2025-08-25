@@ -261,15 +261,12 @@ label {
 }
 
 .card .front {
-    background: linear-gradient(145deg, rgb(189 142 137), #F9F5F6);
-
+    background: linear-gradient(145deg, rgb(14, 22, 39), #9b9ab4);
     transform: rotateY(0deg);
 }
 
 .card .back {
-    background: linear-gradient(145deg,  rgb(14, 22, 39), #ddd8d9);
-
-    color: white;
+    background: linear-gradient(145deg,  rgb(189, 142, 137), #e9dfdf);
     transform: rotateY(180deg);
 }
 
@@ -308,7 +305,7 @@ span{
     perspective: 1000px;
     margin: auto;
     margin-top: 5px;
-    background: rgb(189 142 137);
+    background: linear-gradient(145deg,  rgb(189, 142, 137), #f1e1e1);
     border-radius: 10px;
     box-shadow: 0 10px 25px rgb(0 0 0 / 0.2);
     text-align: center;
@@ -340,7 +337,7 @@ p{
 
 
 .tag {
-    background-color: rgb(127 98 105);;
+    background-color: rgb(14, 22, 39);
     color: white;
     text-decoration: none;
     padding: 4px 10px;
@@ -352,6 +349,7 @@ p{
     margin-left: 13%;
     margin-bottom: 20px;
 }
+
 
 
 
