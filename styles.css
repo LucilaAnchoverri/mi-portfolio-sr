@@ -2,6 +2,7 @@ html,body{
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: merryweather;
 }
 
 
@@ -9,7 +10,6 @@ body{
     display: flexbox;
     flex-direction: column;
     background: rgb(244 225 224);
-    font-family: Arial;
 }
 
 /*Estilo header*/
@@ -17,7 +17,6 @@ header{
     background: rgb(127 98 105);
     color: white;
     padding: 10px;
-    font-family: merryweather;
 }
 
 nav{
@@ -61,7 +60,6 @@ main h1{
     width: 40%;
     padding: 30px;
     margin: 5% 0 0 10%;
-    font-family: merryweather;
     font-size: 45px;
 }
 
@@ -77,13 +75,12 @@ main h1{
     margin-right: 12%;
 }
 
-#intro{
+.intro{
     margin-left: 13%;
-    font-family: 'Arial', sans-serif;
+    font-size: 18px;
 }
 
-#mainBtn {
-    margin-left: 13%;
+button {
     background-color: rgb(127 98 105);
     border: none;
     border-radius: 8px;
@@ -91,13 +88,14 @@ main h1{
     height: 30px;
     cursor: pointer;
     font-size: 18px;
-    font-family: merryweather;
+}
+
+#mainBtn{
+    margin-left: 13%;
 }
 
 
-
 h3 {
-    font-family: merryweather;
     font-size: 30px;
     margin-top: 8%;
     text-align: center;
@@ -149,9 +147,81 @@ footer{
     background: rgb(127 98 105);
     padding: 10px;
     margin-top: 15%;
+    clear: both; /* Evita que el footer colapse con elementos flotantes como el mapa */
 }
 
 footer p{
     color: white;
     text-align: center;
+}
+
+/*CONTACTO*/
+.formContainer{
+    display: flex;
+    float: right;
+    margin-right: 15%;
+    margin-bottom: 40px;
+    width: 420px;
+    height: 300px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgb( 0, 0, 0.1);
+}
+.form-group{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.form-group input {
+    padding-right: 40px; /* espacio para el icono a la derecha */
+    width: 350px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.form-group input::placeholder {
+    padding-left: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+
+.input-icon {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+#formBtn{
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+.contactContainer{
+    float: left;
+    gap: 30px;
+    margin-left: 15%;
+}
+
+
+
+.mapContainer{
+    margin-bottom: 40px;
+    width: 250px;
+    height: 200px;
 }
